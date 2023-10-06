@@ -1,2 +1,18 @@
 # Ejercicio-Fibonacci
 Ejercicio clase 12 - 06/10/2023
+
+
+const fib = (n, numFibInicio = [0, 1]) => {
+  if (n <= numFibInicio.length) {
+    return numFibInicio;
+  }
+
+  const nextValue =
+    numFibInicio[numFibInicio.length - 1] +
+    numFibInicio[numFibInicio.length - 2];
+  numFibInicio.push(nextValue);
+  return fib(n, numFibInicio);
+};
+
+const newFibonacci = fib(10);
+console.log(newFibonacci);
