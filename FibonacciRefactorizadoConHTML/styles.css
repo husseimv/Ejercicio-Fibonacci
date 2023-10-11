@@ -1,0 +1,22 @@
+body::before{
+    content: "";
+    background-image: url("./fibonacci-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+    z-index: -1;
+}
+#resultNumbers {
+    max-height: 200px; 
+    overflow: auto; 
+    border: 1px solid #ccc; 
+  }
+
+#resultNumbers{
+    border: none;
+}
